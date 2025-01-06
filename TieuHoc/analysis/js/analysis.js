@@ -27,7 +27,7 @@ function init() {
 
 function checkCookie(){
     if(getCookie("CodeSchool").substring(0,2) == "Ti"){
-        let sheetID = '16so5Uyf5w-UMS9NVf-4VPkiS3wC8Nu36WQwVaugzxZ8';
+        let sheetID = '1JSqGPz_GAzHcKxRFnuwCX5KTM__701bR0LtF2gjGuiQ';
         let base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
         let codeSchool = getCookie("CodeSchool");
         let ls1 = getCookie("LS1");
