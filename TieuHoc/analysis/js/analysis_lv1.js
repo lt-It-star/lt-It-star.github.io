@@ -25,7 +25,7 @@ function checkCookieHome(){
     let ls3 = getCookie("LS3");
     let dataCheckCookie = [];
     var sheetName = 'School_Detail';
-    //up
+    //up 
     var qu_AllData = '';
     qu_AllData = 'Select B,C,D,F,G WHERE B = \"' + codeSchool + '\" AND F = \"' + ls1 + '\" AND G = \"' + ls2 + '\" AND H = \"' + ls3 + '\"';
     var queryAllData = encodeURIComponent(qu_AllData);
