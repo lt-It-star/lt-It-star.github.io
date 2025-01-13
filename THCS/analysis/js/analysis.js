@@ -26,7 +26,7 @@ function init() {
 }
 
 function checkCookie(){
-    if(getCookie("CodeSchool").substring(0,2) == "Ti"){
+    if(getCookie("CodeSchool").substring(0,2) == "TH"){
         let sheetID = '1JSqGPz_GAzHcKxRFnuwCX5KTM__701bR0LtF2gjGuiQ';
         let base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
         let codeSchool = getCookie("CodeSchool");
@@ -85,15 +85,15 @@ function modalLogIn(value){
     var htmlModelLogIn = "";
     var colorTitleLogInLevel = "";
     if(valueLevel == 1){
-        titleLogInLevel = "Lớp 3 - IC3 GS6 Spark Level " + valueLevel.toString();
+        titleLogInLevel = "IC3 GS6 Level " + valueLevel.toString();
         colorTitleLogInLevel = "#994589";
     }
     else if(valueLevel == 2){
-        titleLogInLevel = "Lớp 4 - IC3 GS6 Spark Level " + valueLevel.toString();
+        titleLogInLevel = "IC3 GS6 Level " + valueLevel.toString();
         colorTitleLogInLevel = "#843C0C";
     }
     else{
-        titleLogInLevel = "Lớp 5 - IC3 GS6 Spark Level " + valueLevel.toString();
+        titleLogInLevel = "IC3 GS6 Level " + valueLevel.toString();
         colorTitleLogInLevel = "#385723";
     }    
     htmlModelLogIn = "<div class=\"modal-content animate\">"
