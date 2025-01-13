@@ -1,7 +1,7 @@
 // Get the modal
 let modal = document.getElementById('id01');
 let valueLevel = 0;
-let linkHomePage = "https://nguyentran-edu.ic3gs6.com";
+let linkHomePage = "https://practice.ic3gs6.com";
 //Up
 let linkCongCuLuyenThiLevel1 = "";
 let linkCongCuLuyenThiLevel2 = "";
@@ -29,7 +29,7 @@ function init() {
 
 function checkCookie(){
     if(getCookie("CodeSchool").substring(0,2) == "TH"){
-        let sheetID = '16so5Uyf5w-UMS9NVf-4VPkiS3wC8Nu36WQwVaugzxZ8';
+        let sheetID = '1JSqGPz_GAzHcKxRFnuwCX5KTM__701bR0LtF2gjGuiQ';
         let base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
         let codeSchool = getCookie("CodeSchool");
         let ls1 = getCookie("LS1");
