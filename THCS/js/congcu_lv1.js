@@ -80,11 +80,10 @@ function renderNameUsr(){
    document.getElementById("nameUsr").innerHTML = htmlRenderNameUser;
 
    //Change Here - Option 3
-   var htmlRenderDescriptionTool = 
-   "Bạn hãy chọn chế độ <b><i><span style=\"color: #5B46F8;\">Luyện Tập</span></i></b> hoặc <b><i><span style=\"color: #F8466D;\">Luyện Thi</span></i></b> hoặc <b><i><span style=\"color: #E63C1E;\">Thi Thử</span></i></b> để ôn luyện nhé!";
+   //var htmlRenderDescriptionTool = "Bạn hãy chọn chế độ <b><i><span style=\"color: #5B46F8;\">Luyện Tập</span></i></b> hoặc <b><i><span style=\"color: #F8466D;\">Luyện Thi</span></i></b> hoặc <b><i><span style=\"color: #E63C1E;\">Thi Thử</span></i></b> để ôn luyện nhé!";
    
    //Change Here - Option 1
-   //"Bạn hãy chọn chế độ <b><i><span style=\"color: #5B46F8;\">Luyện Tập</span></i></b> hoặc <b><i><span style=\"color: #E63C1E;\">Thi Thử</span></i></b> để ôn luyện nhé!";
+   var htmlRenderDescriptionTool = "Bạn hãy chọn chế độ <b><i><span style=\"color: #5B46F8;\">Luyện Tập</span></i></b> hoặc <b><i><span style=\"color: #E63C1E;\">Thi Thử</span></i></b> để ôn luyện nhé!";
 
    //Change Here - Option 2
    //"Bạn hãy chọn chế độ <b><i><span style=\"color: #5B46F8;\">Luyện Tập</span></i></b> hoặc <b><i><span style=\"color: #F8466D;\">Luyện Thi</span></i></b> để ôn luyện nhé!";
@@ -243,7 +242,7 @@ function renderLuaChonCongCu(){
     var htmlSelectTool = "";
     htmlSelectTool = "<input type=\"radio\" id=\"s1\" name=\"se_tool\" value=\"s1\"> <span style=\"color:#5B46F8;\"><b><i>Luyện Tập</i></b></span>&emsp;&ensp;"
     //Change Here - Option 2
-                    + "<input type=\"radio\" id=\"s3\" name=\"se_tool\" value=\"s3\"> <span style=\"color:#F8466D;\"><b><i>Luyện Thi</i></b></span>&emsp;&ensp;"
+                    + "<input style=\"display:none;\" type=\"radio\" id=\"s3\" name=\"se_tool\" value=\"s3\"> <span style=\"display:none;color:#F8466D;\"><b><i>Luyện Thi</i></b></span>&emsp;&ensp;"
                     + "<input type=\"radio\" id=\"s2\" name=\"se_tool\" value=\"s2\"> <span style=\"color:#E63C1E;\"><b><i>Thi Thử</i></b></span><br/>"
                     + "<div><button class=\"btn-select-tool\" onclick=\"confirmRenderCongCu()\"><b>OK</b></button></div>";
     //Option 1
@@ -267,9 +266,9 @@ function confirmRenderCongCu(){
                 renderCongCu("CC1_LV1", 1);
             }
             //Change Here - Option 2, 3
-            else if(ele[i].value == "s3"){
-                renderCongCu("CC3_LV1", 3);
-            }            
+            //else if(ele[i].value == "s3"){
+                //renderCongCu("CC3_LV1", 3);
+            //}            
             //Change Here - Option 1, 3
             else if(ele[i].value == "s2"){
                 renderCongCu("CC2_LV1", 2);
@@ -279,10 +278,10 @@ function confirmRenderCongCu(){
     }
     if(checkSelect == false){
         // Change Here - Option 2
-        alert("Bạn hãy chọn \"Luyện Tập\" hoặc \"Luyện Thi\" nhé!");
+        // alert("Bạn hãy chọn \"Luyện Tập\" hoặc \"Luyện Thi\" nhé!");
         
         // Change Here - Option 1
-        // alert("Bạn hãy chọn \"Luyện Tập\" hoặc \"Thi Thử\" nhé!");
+        alert("Bạn hãy chọn \"Luyện Tập\" hoặc \"Thi Thử\" nhé!");
 
         // Change Here - Option 3
         // alert("Bạn hãy chọn \"Luyện Tập\" hoặc \"Luyện Thi\" hoặc \"Thi Thử\" nhé!");
