@@ -1,4 +1,4 @@
-let linkHomePage = "https://nguyentran-edu.ic3gs6.com";
+let linkHomePage = "https://practice.ic3gs6.com";
 let data1 = [];
 let user1 = "";
 let end_time1 = "";
@@ -25,7 +25,7 @@ function init() {
 }
 
 function checkCookieHome(){
-    let sheetID = '16so5Uyf5w-UMS9NVf-4VPkiS3wC8Nu36WQwVaugzxZ8';
+    let sheetID = '1JSqGPz_GAzHcKxRFnuwCX5KTM__701bR0LtF2gjGuiQ';
     let base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
     let codeSchool = getCookie("CodeSchool");
     let ls1 = getCookie("LS1");
